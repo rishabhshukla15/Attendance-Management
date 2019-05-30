@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 29, 2019 at 10:19 PM
+-- Generation Time: May 30, 2019 at 11:49 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -66,9 +66,31 @@ CREATE TABLE IF NOT EXISTS `attendance_records` (
 --
 
 INSERT INTO `attendance_records` (`id`, `student_name`, `roll_number`, `attendance_status`, `date`) VALUES
-(1, 'asim', '23', 'Present', '2019-05-29'),
-(2, 'asim', '23', 'Present', '2019-05-29'),
-(3, 'asim', '23', 'Present', '2019-05-29');
+(1, 'ankit', '1', 'Present', '2019-05-30'),
+(2, 'rishi', '69', 'Absent', '2019-05-30'),
+(3, 'asim', '23', 'Present', '2019-05-30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usertable`
+--
+
+DROP TABLE IF EXISTS `usertable`;
+CREATE TABLE IF NOT EXISTS `usertable` (
+  `name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `usertable`
+--
+
+INSERT INTO `usertable` (`name`, `password`) VALUES
+('rishabh', '1234'),
+('ankit', '12345'),
+('satyam', '234');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
