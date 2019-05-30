@@ -1,0 +1,39 @@
+body{
+  background: linear-gradient(rgba(211,211,211,0.1),rgba(211,211,211,0.3)),url(../image/xyz.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.login-box{
+  max-width: 700px;
+  float:none;
+  margin: 200px auto;
+}
+
+.login-left{
+  background: rgb(211,211,211,0.4);
+  padding: 40px;
+}
+
+.login-right{
+  background: #fff;
+  padding: 40px;
+}
+.form-control{
+  background-color: transparent !important;
+}
+
+
+.panel-transparent {
+        background: none;
+    }
+
+    .panel-transparent .panel-heading{
+        background: rgba(211,211,211, 0.6)!important;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(255, 255, 255, 0.4)!important;
+    }
+    .navbar-inner {
+        background:transparent;
+    }

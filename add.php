@@ -1,5 +1,8 @@
 <?php
-
+session_start();
+if(!isset($_SESSION['username'])){
+	header('location:login.php');
+}
 include("header.php");
 include("db.php");
 $flag=0;
@@ -24,7 +27,7 @@ if(isset($_POST['submit']))
 	<div class="panel-heading">
 		<h2>
 			<a class="btn btn-success" href="add.php">Add student</a>
-			<a class="btn btn-info pull-right" href="index.php">Back</a> 
+			<a class="btn btn-info pull-right" href="index.php">Back</a>
 		</h2>
 	</div>
 
