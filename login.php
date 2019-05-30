@@ -29,7 +29,6 @@
   </div>
 </nav>
 
-
     <div class="login-box">
       <div class="row">
         <div class="col-md-6 login-left">
